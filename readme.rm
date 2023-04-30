@@ -1,0 +1,32 @@
+Algorithm: is_palindrome
+This algorithm takes a string as input and returns True if the input string is a palindrome and False otherwise.
+
+Variables:
+Palind : A boolean variable used to store the result of the palindrome check.
+word : A string variable used to store the input word from the user.
+wordlower : A string variable used to store the lower case version of the input word.
+i : An integer variable used as an index in the first for loop.
+j : An integer variable used as an index in the second for loop.
+Input:
+The user is prompted to enter a word.
+Output:
+Palind is True if the input string is a palindrome and False otherwise.
+Algorithm Instructions:
+Prompt the user to enter a word.
+If the length of the input word is less than or equal to 1, set Palind to True and go to step 7.
+Convert the input word to lower case and store it in the wordlower variable.
+Start a for loop with i from 0 to the length of the wordlower string.
+Start another for loop with j from the length of the wordlower string to 0.
+Compare the i-th character of wordlower to the j-th character of wordlower. If they are the same, increment i and decrement j. If they are different, set Palind to False and exit the inner loop.
+If Palind is not set to False by the end of the loop, set it to True.
+Output the value of Palind.
+Example:
+vbnet
+Copy code
+Input: "racecar"
+Output: True
+
+Input: "hello"
+Output: False
+Note:
+This algorithm only checks for palindromes in single words. It does not consider phrases or sentences.

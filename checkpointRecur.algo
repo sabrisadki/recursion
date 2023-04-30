@@ -1,0 +1,31 @@
+ALGORITHM is_palindrome //This algo takes a string as input and returns True if the input string is a palindromeand False otherwise.
+VAR
+
+    Palind : BOOLEAN;
+    word : STRING;
+    wordlower : STRING; 
+    i : INTEGER;
+    j : INTEGER = word.length;
+
+BEGIN
+
+    write("please enter the word");
+    read(word);
+    IF (word.length<=1) THEN
+        Palind = true:
+    ELSE
+        wordlower= lower.word;
+
+        FOR i FROM 0 TO wordlower.length STEP  1 DO
+            FOR j FROM wordlower.length TO 0 STEP 1  DO
+                IF (wordlower[i]=wordlower[j]) THEN
+                    i=i+1;
+                    j=j-1;
+                ELSE
+                    Palind = False;
+                END_IF
+            END_FOR
+        END_FOR
+        Palind = true
+    END_IF
+END
