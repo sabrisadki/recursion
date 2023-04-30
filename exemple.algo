@@ -1,0 +1,21 @@
+    FUNCTION linearSum(arr : ARRAY_OF INTEGER, n :INTEGER) : INTEGER
+    BEGIN
+    IF (n = 1) THEN // when the n is the length of the arr
+        RETURN arr[0];
+    ELSE
+        // here we recall the function with the length - 1
+        RETURN arr[n-1] + linearSum(arr,n-1);
+    END_IF
+    END
+
+
+
+    FUNCTION fibbonacci(n:INTEGER) : INTEGER
+    IF (n=0) THEN
+    RETURN 0;
+    ELSE_IF (n=1) THEN
+    RETURN 1
+    ELSE
+        RETURN fibbonacci(n-1) + fibbonacci(n-2)
+    END_IF
+    END
